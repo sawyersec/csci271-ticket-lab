@@ -39,30 +39,25 @@ void printTicketInfo(Show show, Ticket ticket) {
 
 
 int main() {
-    // TODO: Part 2d - Step 1: Create an instance of your Show struct.
-    // (e.g., Show myShow;)
+    // Step 1: Create an instance of your Show struct.
+    Show myShow;
 
+    // Step 2: Use the mutator (setter) methods to set its data.
+    myShow.setTitle("Hamilton");
+    myShow.setVenue("Richard Rodgers Theatre");
+    myShow.setShowTime(1900);
 
-    // TODO: Part 2d - Step 2: Use the mutator (setter) methods to set its data.
-    // (e.g., myShow.setTitle("Les Misérables");)
-    // (e.g., myShow.setVenue("Sondheim Theatre");)
-    // (e.g., myShow.setShowTime(1930); // 7:30 PM)
+    // Step 3: Create an instance of your Ticket struct.
+    Ticket myTicket;
 
+    // Step 4: Use direct member access to set its data.
+    myTicket.section = "Orchestra";
+    myTicket.row = 10;
+    myTicket.seat = 24;
+    myTicket.price = 199.99;
 
-    // TODO: Part 2d - Step 3: Create an instance of your Ticket struct.
-    // (e.g., Ticket myTicket;)
-
-
-    // TODO: Part 2d - Step 4: Use direct member access to set its data.
-    // (e.g., myTicket.section = "Stalls";)
-    // (e.g., myTicket.row = 5;)
-    // (e.g., myTicket.seat = 12;)
-    // (e.g., myTicket.price = 150.75;)
-
-
-    // TODO: Part 2d - Step 5: Call the printTicketInfo function.
-    // Pass in your Show and Ticket objects as arguments.
-    // (e.g., printTicketInfo(myShow, myTicket);)
+    // Step 5: Call the printTicketInfo function.
+    printTicketInfo(myShow, myTicket);
 
 
     return 0;

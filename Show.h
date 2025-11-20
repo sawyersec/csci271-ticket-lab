@@ -17,22 +17,20 @@
  */
 struct Show {
 private:
-    // TODO: Add the private data members here per Part 2b.
-    // - a std::string for title
-    // - a std::string for venue
-    // - an int for showTime
-
+    std::string title;
+    std::string venue;
+    int showTime;
 
 public:
-    // TODO: Add the *declarations* for the 6 public methods here (Part 2b).
-    //
     // --- Accessors (Getters) ---
-    // (e.g., std::string getTitle();)
-    //
-    //
+    std::string getTitle();
+    std::string getVenue();
+    int getShowTime();
+
     // --- Mutators (Setters) ---
-    // (e.g., void setTitle(std::string newTitle);)
-    //
+    void setTitle(std::string newTitle);
+    void setVenue(std::string newVenue);
+    void setShowTime(int newShowTime);
 };
 
 #endif //FIRSTSTRUCT_SHOW_H
